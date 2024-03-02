@@ -1,12 +1,23 @@
 
-num1=int(input('Enter a number: '))
-num2=int(input('Enter a number: '))
-sum=num1+num2
-print('Addition is :',sum)
+def InputNumbers():
+    a=int(input('Enter a number: '))
+    b=int(input('Enter a number: '))
+    return a,b
 
-sub=num1-num2
-print('Subtraction is: ',sub)
-mul=num1*num2
-print('Multiplication is: ',mul)
-div=num1/num2
-print('Subtraction is: ',div)
+def Addition(a,b):
+    return a+b
+
+def Subtraction(a,b):
+   return a-b
+
+def Multiplication(a,b):
+    return a*b
+def Division(a,b):
+    return a/b
+
+num1,num2=InputNumbers()
+print(f"You entered : {num1} and {num2}")
+print(f"Addition: {Addition(num1,num2)}")
+print(f"Subtraction: {Subtraction(num1,num2)}")
+print(f"Multiplication :{Multiplication(num1,num2)}")
+print(f"Division:{Division(num1,num2)}")
